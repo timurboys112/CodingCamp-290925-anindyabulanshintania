@@ -1,0 +1,127 @@
+body {
+  background-color: #1a1f25;
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background: #222b36;
+  padding: 20px;
+  border-radius: 12px;
+  width: 450px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #40e0d0;
+}
+
+/* Counter */
+.counter {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #a5f3fc;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form input, .form button {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+.form input {
+  flex: 1;
+}
+
+#add-btn {
+  background-color: #40e0d0;
+  color: #1a1f25;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#filter-btn {
+  background: #3b82f6;
+  color: #fff;
+}
+
+#delete-all-btn {
+  background: #ef4444;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #374151;
+}
+
+.status-done {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+/* Highlight row done */
+tr.done-row {
+  background-color: rgba(34, 197, 94, 0.1);
+}
+
+.action-btn {
+  background: #475569;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+/* Progress bar container */
+.progress-container {
+  background-color: #374151;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0 15px;
+  height: 15px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #22c55e, #40e0d0);
+  transition: width 0.3s ease-in-out;
+}

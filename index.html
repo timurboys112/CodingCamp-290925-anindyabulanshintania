@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h2>Todo List</h2>
+
+    <!-- Counter -->
+    <div class="counter">
+      <span id="pending-count">Pending: 0</span> | 
+      <span id="done-count">Done: 0</span>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Form input -->
+    <div class="form">
+      <input type="text" id="todo-input" placeholder="Add a todo...">
+      <input type="date" id="date-input">
+      <button id="add-btn">+</button>
+    </div>
+
+    <!-- Tombol aksi -->
+    <div class="actions">
+      <button id="filter-today-btn">FILTER TODAY</button>
+      <select id="status-filter">
+        <option value="all">All</option>
+        <option value="pending">Pending</option>
+        <option value="done">Done</option>
+      </select>
+      <button id="delete-all-btn">DELETE ALL</button>
+    </div>
+
+    <!-- Tabel daftar task -->
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="todo-list">
+        <tr><td colspan="4" style="text-align:center;">No task found</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
